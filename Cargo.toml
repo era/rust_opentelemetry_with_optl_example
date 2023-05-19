@@ -1,0 +1,13 @@
+[package]
+name = "rust_opentelemetry_example"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.3.1"
+opentelemetry_api = { git = "https://github.com/open-telemetry/opentelemetry-rust.git", features = ["metrics"] }
+opentelemetry_sdk = { git = "https://github.com/open-telemetry/opentelemetry-rust.git", features = ["rt-tokio"] }
+opentelemetry-otlp = { git = "https://github.com/open-telemetry/opentelemetry-rust.git", features = ["tonic", "metrics"] }
+opentelemetry-semantic-conventions = { git = "https://github.com/open-telemetry/opentelemetry-rust.git" }
